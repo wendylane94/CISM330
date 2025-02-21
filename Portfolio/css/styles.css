@@ -1,0 +1,114 @@
+
+/*
+    Student Name: Wendy Lane
+    Date: 02/20/2025
+    File Name:styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+/* All elements starting styles */
+* {
+	box-sizing: border-box;
+	background-color: slategrey;
+	color: white;
+	font-family: Georgia, Arial, sans-serif;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles for navigation */
+nav {
+margin: 0;
+padding: 0;
+}
+
+nav li a {
+text-decoration: none;
+}
+
+nav ul {
+list-style-type: none;
+}
+
+nav li {
+display: inline-block;
+padding: 0.5%;
+float: left;
+font-size: 22px;  
+}
+
+/* Style rules for header */
+header {
+background-color: lightgrey;
+text-shadow:2px 2px #292933;
+}
+
+/* Style rules for body */
+body {
+}
+
+/* Style rules for main content */
+main p {
+display: grid; 
+grid-template-columns: auto auto auto;  
+}
+
+aside {
+width: 40%;
+float: left;
+}
+
+article {
+width: 60%;
+float: right; 
+}
+
+aside, article {
+	display: grid; 
+	grid-template-columns: auto;
+	padding: 2%;
+}
+
+.main-experience {
+font-size: 18px;
+}
+
+main ul {
+}
+
+main li {
+}
+
+
+#contact {
+font-size: 30px;
+}
+
+#info {
+padding:2%;
+font-size: 24px;
+}
+
+/*  Style rules for footer content */
+footer {
+	display: block;
+	clear: both;
+	text-align: center;
+	padding: 300px;
+	background-color: lightgrey;
+}
+
+@media screen and (max-width: 600px) {
+	aside, section, article {
+		width: 100%;
+}
