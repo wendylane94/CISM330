@@ -1,0 +1,174 @@
+
+/*
+    Student Name: Wendy Lane
+    Date: 02/27/2025
+    File Name:styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+/* All elements starting styles */
+* {
+	box-sizing: border-box;
+	background-color: slategrey;
+	color: white;
+	font-family: Georgia, Arial, sans-serif;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles for navigation */
+nav {
+margin: 0;
+padding: 0;
+}
+
+nav li a {
+text-decoration: none;
+}
+
+nav ul {
+list-style-type: none;
+}
+
+nav li {
+display: inline-block;
+padding: 0.5%;
+float: left;
+font-size: 22px;  
+}
+
+/* Style rules for header */
+header {
+background-color: lightgrey;
+text-shadow:2px 2px #292933;
+}
+
+/* Style rules for body */
+body {
+}
+
+/* Style rules for main content */
+main p {
+}
+
+aside {
+width: 30%;
+float: left;
+}
+
+article {
+width: 70%;
+float: right; 
+}
+
+aside, article {
+	padding: 2%;
+}
+
+.main-experience {
+}
+
+.graphicdesign {
+display: grid; 
+grid-template-columns: auto auto auto; 
+}
+
+main ul {
+}
+
+main li {
+}
+
+
+#contact {
+font-size: 22px;
+}
+
+#info {
+padding:2%;
+font-size: 20px;
+}
+
+/*  Style rules for footer content */
+footer {
+	display: block;
+	clear: both;
+	position: relative;
+	background-color: slategrey;
+	padding: 2%;
+}
+/* social media style rules */
+.social {
+	float: right;
+	width: 20%;
+	padding: 2%;
+	display: flex;
+}
+
+/* Style rules for table */
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+padding: 1%;
+}
+
+td {
+padding: 1%;
+}
+
+
+/* Style rules for form */
+.contact-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: lightblue;
+    color: black;
+    border-style: solid;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .social {
+        width: 100%;
+    }
+
+/*  Style rules for mobile device */
+@media (max-width: 600px) {
+	aside, section, article {
+		width: 100%;
+}
+
+
+/*  Style rules for tablet */
+@media (min-width: 601px) {
+	aside, section, article
+		width: 100%;
+}
+}
