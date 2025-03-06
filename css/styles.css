@@ -46,7 +46,19 @@ nav li {
 display: inline-block;
 padding: 0.5%;
 float: left;
-font-size: 22px;  
+font-size: 22px;
+border: 1px solid;
+border-color: white;
+}
+
+nav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: 1px solid;
+  border-color: white;
+  margin-top: 8px;
+  margin-right: 140px;
+  font-size: 17px;
 }
 
 /* Style rules for header */
