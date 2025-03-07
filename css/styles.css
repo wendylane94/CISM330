@@ -453,3 +453,44 @@ footer a {
     text-decoration: none;
 }
 
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    main, header, #contact, footer {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+   table {
+        font-size: 12px; /* Reduce font size for better fit */
+    }
+
+    th, td {
+        padding: 6px; /* Reduce padding to prevent cutoff */
+    }
+}
+
+/* Style for medium screens */
+@media (min-width: 601px) {
+nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    main, header, #contact, footer {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        display: table; /* Ensure table structure remains */
+    }
+}
+
