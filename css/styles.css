@@ -12,7 +12,7 @@ body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcap
 }
  * {
      box-sizing: border-box;
-     text-size: 18px;
+     font-size: 18px;
 }
 
 /* General styles */
