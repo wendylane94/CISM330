@@ -223,56 +223,247 @@ footer a {
     text-decoration: none;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 900px) {
-    nav {
-        width: 200px;
-    }
+/*
+    Student Name: Wendy Lane
+    Date: 02/27/2025
+    File Name: styles.css
+*/
 
-    main {
-        margin-left: 220px;
-    }
-
-    header, #contact, h1, footer {
-        margin-left: 220px;
-    }
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcaption, ul, li, p, table, th, td, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
+/* General styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Georgia, Arial, sans-serif;
+    line-height: 2.0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation styles */
+nav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+nav li {
+    width: 100%;
+    text-align: left;
+    border: 1px solid white;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+nav li a:hover {
+    background-color: gray;
+}
+
+/* Content layout */
+main {
+    margin-left: 270px;
+    padding: 20px;
+    flex: 1;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: black;
+    text-shadow: 2px 2px #292933;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-left: 270px;
+}
+
+/* Contact Page Styling */
+#contact {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 270px;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 270px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    width: 90%;
+    background: gray;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: white;
+    color: black;
+}
+
+.contact-form input[type="submit"]:active {
+    background: darkgray;
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    margin-left: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Social icons */
+.social {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    justify-content: flex-end;
+    width: auto;
+    margin-left: auto;
+}
+
+.social img {
+    width: 40px;
+    transition: opacity 0.3s;
+}
+
+.social img:hover {
+    opacity: 0.5;
+}
+
+/* Hover effect for all links */
+a:hover, a:active {
+    background-color: gray !important;
+    color: white !important;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Resume link specific styling */
+#resume a {
+    background-color: black !important;
+    color: white !important;
+}
+
+#resume a:hover, #resume a:active {
+    background-color: gray !important;
+    color: black !important;
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Adjusted for responsiveness */
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 30px; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+th {
+    background-color: gray;
+    color: black;
+}
+
+/* footer styling */
+footer a {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* Style for smaller screen*/
 @media (max-width: 600px) {
-    nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        text-align: center;
-    }
-    
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px;
-    }
+	table {	
+		width: 100%; /* Adjusted for responsiveness */
+	}
+}
 
-    nav li {
-        display: inline-block;
-    }
+/* Style for medium screen*/
+@media (min-width: 601px) {
+	table {	
+		width: 100%; /* Adjusted for responsiveness */
+	}
+}
 
-    main {
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    header, #contact, h1, footer {
-        margin-left: 0;
-    }
-
-    table {
-        width: 100%; /* Ensures table shrinks on smaller screens */
-	overflow-x:auto;
-	font-size: 14px; /* Decrease font size */
-    }
-    th, td {
-        padding: 10px; /* Reduce padding */
-        word-wrap: break-word; /* Ensure text wraps */
-    }
+/* Style for larger screen*/
+@media (min-width: 768px) {
+	table {	
+		width: 100%; /* Adjusted for responsiveness */
+	}
 }
