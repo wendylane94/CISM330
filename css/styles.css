@@ -1,8 +1,6 @@
-/*
-    Student Name: Wendy Lane
-    Date: 02/27/2025
-    File Name: styles.css
-*/
+/* Student Name: Wendy Lane */
+/* Date: 02/27/2025 */
+/* File Name: styles.css */
 
 /* CSS Reset */
 body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcaption, ul, li, p, table, th, td, form, input, textarea, button {
@@ -17,11 +15,12 @@ body {
     background-color: black;
     color: white;
     font-family: Georgia, Arial, sans-serif;
+    font-size: 20px;
     line-height: 2.0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Make images responsive */
@@ -61,248 +60,18 @@ nav li a {
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 24px;
     padding: 15px;
     transition: background 0.3s;
 }
 
 nav li a:hover {
     background-color: gray;
+    color: black;
 }
 
 /* Content layout */
-main {
-    margin-left: 270px;
-    padding: 20px;
-    flex: 1;
-    overflow-x: hidden;
-}
-
-header {
-    background-color: black;
-    text-shadow: 2px 2px #292933;
-    padding: 20px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    margin-left: 270px;
-}
-
-/* Contact Page Styling */
-#contact {
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 270px;
-}
-
-/* Push main content to the right of nav */
 main, header, #contact, footer {
-    margin-left: 270px; /* Adjust based on nav width */
-    padding: 20px;
-}
-
-h1 {
-    text-align: left;
-    margin-left: 270px;
-}
-
-h2 {
-    text-align: center;
-}
-
-.contact-form {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    background: white;
-    color: black;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
-.contact-form input[type="submit"] {
-    width: 90%;
-    background: gray;
-    color: black;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background 0.3s, color 0.3s;
-}
-
-.contact-form input[type="submit"]:hover {
-    background: white;
-    color: black;
-}
-
-.contact-form input[type="submit"]:active {
-    background: darkgray;
-    color: white;
-}
-
-/* Footer styles */
-footer {
-    background-color: black;
-    text-align: center;
-    padding: 20px;
-    margin-top: auto;
-    margin-left: 270px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Social icons */
-.social {
-    display: flex;
-    gap: 15px;
-    padding: 10px;
-    justify-content: flex-end;
-    width: auto;
-    margin-left: auto;
-}
-
-.social img {
-    width: 40px;
-    transition: opacity 0.3s;
-}
-
-.social img:hover {
-    opacity: 0.5;
-}
-
-/* Hover effect for all links */
-a:hover, a:active {
-    background-color: gray !important;
-    color: white !important;
-    transition: background 0.3s, color 0.3s;
-}
-
-/* Resume link specific styling */
-#resume a {
-    background-color: black !important;
-    color: white !important;
-}
-
-#resume a:hover, #resume a:active {
-    background-color: gray !important;
-    color: black !important;
-}
-
-/* Table styles */
-table {
-    width: 100%; /* Adjusted for responsiveness */
-    border-collapse: collapse;
-    margin: 20px auto;
-    font-size: 18px;
-}
-
-th, td {
-    border: 1px solid white;
-    padding: 30px; /* Increased padding for better spacing */
-    text-align: center;
-}
-
-th {
-    background-color: gray;
-    color: black;
-}
-
-/* Email link styling */
-footer a {
-    color: white !important;
-    text-decoration: none;
-}
-
-/*
-    Student Name: Wendy Lane
-    Date: 02/27/2025
-    File Name: styles.css
-*/
-
-/* CSS Reset */
-body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcaption, ul, li, p, table, th, td, form, input, textarea, button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-/* General styles */
-body {
-    background-color: black;
-    color: white;
-    font-family: Georgia, Arial, sans-serif;
-    line-height: 2.0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-
-/* Make images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Navigation styles */
-nav {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    background-color: black;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-}
-
-nav ul {
-    list-style-type: none;
-    width: 100%;
-}
-
-nav li {
-    width: 100%;
-    text-align: left;
-    border: 1px solid white;
-}
-
-nav li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    padding: 15px;
-    transition: background 0.3s;
-}
-
-nav li a:hover {
-    background-color: gray;
-}
-
-/* Content layout */
-main {
     margin-left: 270px;
     padding: 20px;
     flex: 1;
@@ -316,25 +85,19 @@ header {
     text-align: left;
     display: flex;
     align-items: center;
-    margin-left: 270px;
-}
-
-/* Contact Page Styling */
-#contact {
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 270px;
 }
 
 h1 {
     text-align: left;
-    margin-left: 270px;
+    font-size: 28px;
 }
 
 h2 {
     text-align: center;
+    font-size: 24px;
 }
 
+/* Contact Form */
 .contact-form {
     width: 100%;
     max-width: 400px;
@@ -347,13 +110,13 @@ h2 {
 .contact-form label {
     display: block;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     background: white;
     color: black;
@@ -365,10 +128,10 @@ h2 {
     width: 90%;
     background: gray;
     color: black;
-    padding: 8px 12px;
+    padding: 10px 14px;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -388,7 +151,6 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: auto;
-    margin-left: 270px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -401,7 +163,6 @@ footer {
     padding: 10px;
     justify-content: flex-end;
     width: auto;
-    margin-left: auto;
 }
 
 .social img {
@@ -413,29 +174,10 @@ footer {
     opacity: 0.5;
 }
 
-/* Hover effect for all links */
-a:hover, a:active {
-    background-color: gray !important;
-    color: white !important;
-    transition: background 0.3s, color 0.3s;
-}
-
-/* Resume link specific styling */
-#resume a {
-    background-color: black !important;
-    color: white !important;
-}
-
-#resume a:hover, #resume a:active {
-    background-color: gray !important;
-    color: black !important;
-}
-
 /* Table styles */
 table {
     max-width: 100%;
     width: 100%;
-    table-layout: fixed;
     border-collapse: collapse;
     font-size: 18px;
 }
@@ -445,18 +187,25 @@ th, td {
     padding: 15px;
     text-align: center;
     box-sizing: border-box;
-    word-wrap: break-word; /* Ensures long words break */
+    word-wrap: break-word;
 }
 
 th {
-background-color: gray;
-color:black;
+    background-color: gray;
+    color: black;
 }
 
-/* footer styling */
-footer a {
-    color: white !important;
+/* Link styling */
+a {
+    color: white;
     text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+a:hover {
+    background-color: gray;
+    color: black;
 }
 
 /* Mobile-friendly adjustments */
@@ -472,31 +221,25 @@ footer a {
         padding: 20px;
     }
 
-   table {
-        font-size: 12px; /* Reduce font size for better fit */
+    table {
+        font-size: 12px;
     }
 
     th, td {
-        padding: 6px; /* Reduce padding to prevent cutoff */
+        padding: 6px;
     }
 }
 
-/* Style for medium screens */
-@media (min-width: 601px) {
-nav {
-        position: relative;
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+    nav {
         width: 100%;
         height: auto;
+        position: relative;
     }
 
     main, header, #contact, footer {
         margin-left: 0;
         padding: 20px;
     }
-
-    table {
-        width: 100%;
-        display: table; /* Ensure table structure remains */
-    }
 }
-
