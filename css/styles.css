@@ -447,23 +447,36 @@ footer a {
     text-decoration: none;
 }
 
-/* Style for smaller screen*/
+
+/* Style for < 600px */
 @media (max-width: 600px) {
 	table {	
 		width: 100%; /* Adjusted for responsiveness */
 	}
+	nav, nav li, nav ul, nav li a {
+    		float: none;
+    		width: 100%;
+  	}
 }
 
-/* Style for medium screen*/
+/* Style for 
 @media (min-width: 601px) {
-	table {	
+table {	
 		width: 100%; /* Adjusted for responsiveness */
 	}
+	nav, nav li, nav ul, nav li a {
+    		float: none;
+    		width: 100%;
+  	}
 }
 
-/* Style for larger screen*/
+/* Style for 
 @media (min-width: 768px) {
-	table {	
+table {	
 		width: 100%; /* Adjusted for responsiveness */
 	}
+	nav, nav li, nav ul, nav li a {
+    		float: none;
+    		width: 100%;
+  	}
 }
