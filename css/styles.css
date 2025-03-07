@@ -12,6 +12,10 @@ body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcap
     box-sizing: border-box;
 }
 
+* {
+    font-size: 22px;
+}
+
 /* General styles */
 body {
     background-color: black;
