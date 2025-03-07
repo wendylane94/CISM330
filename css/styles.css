@@ -188,6 +188,11 @@ a:hover, a:active {
 }
 
 /* Resume link specific styling */
+#resume {
+    background-color: black !important;
+    color: white !important;
+}
+
 #resume:hover, #resume:active {
     background-color: black !important;
     color: white !important;
