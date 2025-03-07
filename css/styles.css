@@ -474,7 +474,7 @@ footer a {
     }
 }
 
-/* Style for 
+/* Style for medium screens */
 @media (min-width: 601px) {
 nav {
         position: relative;
@@ -493,7 +493,7 @@ nav {
     }
 
 
-/* Style for 
+/* Style for larger screens */
 @media (min-width: 768px) {
 nav {
         position: relative;
