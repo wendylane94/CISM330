@@ -205,7 +205,6 @@ a:hover, a:active {
 table {
     width: 100%; /* Adjusted for responsiveness */
     border-collapse: collapse;
-    margin: 20px auto;
     font-size: 18px;
 }
 
