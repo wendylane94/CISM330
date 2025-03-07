@@ -491,23 +491,4 @@ nav {
         width: 100%;
         display: table; /* Ensure table structure remains */
     }
-
-
-/* Style for larger screens */
-@media (min-width: 768px) {
-nav {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-
-    main, header, #contact, footer {
-        margin-left: 0;
-        padding: 20px;
-    }
-
-    table {
-        width: 100%;
-        display: table; /* Ensure table structure remains */
-    }
-
+}
