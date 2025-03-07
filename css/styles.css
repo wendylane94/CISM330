@@ -36,6 +36,8 @@ nav {
     width: 250px;
     height: 100vh;
     position: fixed;
+    left: 0;
+    top: 0;
     background-color: black;
     padding-top: 20px;
     display: flex;
