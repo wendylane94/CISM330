@@ -49,15 +49,15 @@ display: flex;
 flex-direction: column;
 font-size: 22px;  
 }
+
 /* Style rules for header */
 header {
-background-color: lightgrey;
+background-color: black;
 text-shadow:2px 2px #292933;
 }
 
 /* Style rules for body */
-body {
-}
+
 
 /* Style rules for main content */
 main p {
@@ -69,12 +69,16 @@ main p {
 
 aside {
 width: 30%;
-float: left;
+display: flex;
+gap: 20px;
+flex: 1;
 }
 
 article {
 width: 70%;
-float: right; 
+display: flex;
+gap: 20px;
+flex: 2;
 }
 
 aside, article {
@@ -99,7 +103,8 @@ font-size: 22px;
 #info {
 padding:2%;
 font-size: 20px;
-float: right;
+display: flex;
+flex: 1;
 }
 
 .main-experience {
@@ -206,6 +211,7 @@ display: block;
 	margin-left: auto;
 	margin-right: auto;
     }
+}
 
 /*  Style rules for mobile device */
 @media (max-width: 600px) {
@@ -214,6 +220,7 @@ display: block;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
+}
 }
 
 /*  Style rules for tablet */
@@ -224,4 +231,15 @@ display: block;
 		margin-left: auto;
 		margin-right: auto;
 }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 767px) {
+    main {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+    
+    aside, article {
+        width: 100%; /* Full width on small screens */
+    }
 }
