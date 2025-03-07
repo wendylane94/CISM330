@@ -269,5 +269,10 @@ footer a {
     table {
         width: 100%; /* Ensures table shrinks on smaller screens */
 	overflow-x:auto;
+	font-size: 14px; /* Decrease font size */
+    }
+    th, td {
+        padding: 10px; /* Reduce padding */
+        word-wrap: break-word; /* Ensure text wraps */
     }
 }
