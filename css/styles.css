@@ -1,245 +1,266 @@
-
 /*
     Student Name: Wendy Lane
     Date: 02/27/2025
-    File Name:styles.css
+    File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcaption {
+body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcaption, ul, li, p, table, th, td, form, input, textarea, button {
     margin: 0;
     padding: 0;
     border: 0;
-  }
+    box-sizing: border-box;
+}
 
-/* All elements starting styles */
-* {
-	box-sizing: border-box;
-	background-color: black;
-	color: white;
-	font-family: Georgia, Arial, sans-serif;
-	line-height: 2.0;
+/* General styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Georgia, Arial, sans-serif;
+    line-height: 2.0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Make images responsive */
 img {
     max-width: 100%;
     height: auto;
-    display: inline-block;
+    display: block;
 }
 
-/* Styles for navigation */
+/* Navigation styles */
 nav {
-margin: 0;
-padding: 0;
-}
-
-nav li a {
-text-decoration: none;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav ul {
-list-style-type: none;
+    list-style-type: none;
+    width: 100%;
 }
 
 nav li {
-display: inline-block;
-padding: 0.5%;
-display: flex;
-flex-direction: column;
-font-size: 22px;  
+    width: 100%;
+    text-align: left;
+    border: 1px solid white;
 }
 
-/* Style rules for header */
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+nav li a:hover {
+    background-color: gray;
+}
+
+/* Content layout */
+main {
+    margin-left: 270px;
+    padding: 20px;
+    flex: 1;
+}
+
 header {
-background-color: black;
-text-shadow:2px 2px #292933;
+    background-color: black;
+    text-shadow: 2px 2px #292933;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-left: 270px;
 }
 
-/* Style rules for body */
-
-
-/* Style rules for main content */
-main p {
-}
-
-/* Style rules for main experience home page info */
-.main-experience {
-}
-
-aside {
-width: 30%;
-display: flex;
-gap: 20px;
-flex: 1;
-}
-
-article {
-width: 70%;
-display: flex;
-gap: 20px;
-flex: 2;
-}
-
-aside, article {
-	padding: 2%;
-}
-
-#resume:hover {
-opacity: 0.5;
-}
-
-
-.graphicdesign {
-display: grid; 
-grid-template-columns: auto auto auto; 
-}
-
-
+/* Contact Page Styling */
 #contact {
-font-size: 22px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 270px;
 }
 
-#info {
-padding:2%;
-font-size: 20px;
-display: flex;
-flex: 1;
+h1 {
+    text-align: left;
+    margin-left: 270px;
 }
 
-.main-experience {
-font-size:20px;
-}
-
-/*  Style rules for footer content */
-footer {
-	display: block;
-	clear: both;
-	position: relative;
-	background-color: black;
-	padding: 2%;
-}
-
-/* Style rules for linked in */
-.social {
-	float: right;
-	width: 20%;
-	padding: 2%;
-	display: flex;
-}
-
-
-.social:hover {
-	opacity: 0.5;
-}
-
-/* Style rules for links */
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  background-color: #B2FFFF;
-  color: black;
-}
-
-a:active {
-  text-decoration: underline;
-  background-color: #B2FFFF;
-  color: black;
-}
-
-
-/* Style rules for table */
-table, th, td {
-    border: 1px solid;
+h2 {
     text-align: center;
-    border-collapse: collapse;
-    padding: 2%;
 }
 
-th {
-padding: 1%;
-}
-
-td {
-padding: 1%;
-}
-
-
-/* Style rules for form */
 .contact-form {
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 .contact-form label {
     display: block;
-    width: 100%;
     margin-bottom: 10px;
-    font-size: 20px;
-    background-color: lightblue;
-    color: black;
-    border-style: solid;
+    font-size: 18px;
 }
 
 .contact-form input,
 .contact-form textarea {
-display: block;
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: white;
     color: black;
-    border-style: solid;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 
-/* Media query for mobile view */
-@media (max-width: 767px) {
-    .contact-form label,
-    .contact-form input,
-    .contact-form textarea,
-    .social {
+.contact-form input[type="submit"] {
+    width: 90%;
+    background: gray;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: white;
+    color: black;
+}
+
+.contact-form input[type="submit"]:active {
+    background: darkgray;
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    margin-left: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Social icons */
+.social {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    justify-content: flex-end;
+    width: auto;
+    margin-left: auto;
+}
+
+.social img {
+    width: 40px;
+    transition: opacity 0.3s;
+}
+
+.social img:hover {
+    opacity: 0.5;
+}
+
+/* Hover effect for all links */
+a:hover, a:active {
+    background-color: gray !important;
+    color: white !important;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Resume link specific styling */
+#resume:hover, #resume:active {
+    background-color: black !important;
+    color: white !important;
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 80%; /* Reduced width but responsive */
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 20px; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+th {
+    background-color: gray;
+    color: black;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 900px) {
+    nav {
+        width: 200px;
+    }
+
+    main {
+        margin-left: 220px;
+    }
+
+    header, #contact, h1, footer {
+        margin-left: 220px;
+    }
+
+    table {
+        width: 100%; /* Ensures table shrinks on smaller screens */
         max-width: 100%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
     }
 }
+}
 
-/*  Style rules for mobile device */
 @media (max-width: 600px) {
-	aside, section, article {
-        max-width: 100%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-}
-
-/*  Style rules for tablet */
-@media (min-width: 601px) {
-	aside, section, article
-		max-width: 100%;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-}
-}
-
-/* Responsive layout for smaller screens */
-@media (max-width: 767px) {
-    main {
-        flex-direction: column; /* Stack items on smaller screens */
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-align: center;
     }
     
-    aside, article {
-        width: 100%; /* Full width on small screens */
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    header, #contact, h1, footer {
+        margin-left: 0;
+    }
+
+    table {
+        width: 100%; /* Ensures table shrinks on smaller screens */
+        max-width: 100%;
     }
 }
