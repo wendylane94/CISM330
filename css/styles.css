@@ -12,10 +12,6 @@ body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcap
     box-sizing: border-box;
 }
 
-* {
-    font-size: 22px;
-}
-
 /* General styles */
 body {
     background-color: black;
@@ -25,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 /* Make images responsive */
@@ -44,6 +41,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
 }
 
 nav ul {
@@ -75,6 +73,7 @@ main {
     margin-left: 270px;
     padding: 20px;
     flex: 1;
+    overflow-x: hidden;
 }
 
 header {
@@ -197,7 +196,7 @@ a:hover, a:active {
 /* Table styles */
 table {
     width: 100%; /* Adjusted for responsiveness */
-    max-width: 80%; /* Reduced width but responsive */
+    max-width: 90%; /* Reduced width but responsive */
     border-collapse: collapse;
     margin: 20px auto;
     font-size: 18px;
@@ -205,7 +204,7 @@ table {
 
 th, td {
     border: 1px solid white;
-    padding: 20px; /* Increased padding for better spacing */
+    padding: 25px; /* Increased padding for better spacing */
     text-align: center;
 }
 
@@ -227,12 +226,6 @@ th {
     header, #contact, h1, footer {
         margin-left: 220px;
     }
-
-    table {
-        width: 100%; /* Ensures table shrinks on smaller screens */
-        max-width: 100%;
-    }
-}
 }
 
 @media (max-width: 600px) {
@@ -268,3 +261,4 @@ th {
         max-width: 100%;
     }
 }
+a
