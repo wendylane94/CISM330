@@ -451,7 +451,6 @@ footer a {
     text-decoration: none;
 }
 
-/* Style for < 600px */
 /* Mobile-friendly adjustments */
 @media (max-width: 600px) {
     nav {
