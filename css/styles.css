@@ -9,7 +9,10 @@ body, header, nav, main, footer, img, h1, h2, h3, article, aside, figure, figcap
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box;
+}
+ * {
+     box-sizing: border-box;
+     text-size: 18px;
 }
 
 /* General styles */
